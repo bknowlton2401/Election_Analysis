@@ -28,8 +28,14 @@ From there we also broke down the actual count of votes cast for each candidate 
    ![new_item](https://user-images.githubusercontent.com/96890065/158088074-c34b387d-d355-47f9-9953-50d4b70a779f.JPG)
    
   * Largest County Turnout
-    * This was determined using a f-count code. 
-       ![print_turnout](https://user-images.githubusercontent.com/96890065/158088421-45c6f68b-8344-49b4-91eb-855ff5894935.JPG)
+    * This was determined by using a for-loop
+  
+
+  * Candidate Vote count and percentages
+   * The candidates were entered into a list (candidate_options = [ ]) and their votes entered into a dictionary (candidate_votes = { }). This code was written similar to the the county tracker (as seen above). 
+
+ * Winner Results
+  * 
 
 ## Election Audit Summary:
 
