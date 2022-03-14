@@ -29,16 +29,17 @@ From there we also broke down the actual count of votes cast for each candidate 
    
   * Largest County Turnout
     * This was determined by using a for-loop
-  
+  ![largest_turnout](https://user-images.githubusercontent.com/96890065/158089096-2e53ec4d-f20e-45ae-b939-7f98046c3cd8.JPG)
 
   * Candidate Vote count and percentages
    * The candidates were entered into a list (candidate_options = [ ]) and their votes entered into a dictionary (candidate_votes = { }). This code was written similar to the the county tracker (as seen above). 
 
  * Winner Results
-  * 
+  * The results were determined by using a for-loop and if-else statement to calculate the total votes and print the highest vote count with percentage.
+  ![winner](https://user-images.githubusercontent.com/96890065/158089217-84637b81-6ba1-4305-898f-85bc760782fa.JPG)
 
 ## Election Audit Summary:
 
-This code can be used for furture elections, because we have written into the code, the ability to add and track new candidate names and county names:
+In summary, this code can be used for furture elections with minor modifications.  Since the we have written into the code, the ability to add and track new candidate names and county names, the code will only need to have the csv path modified.  Another reason this code can be used in future elections, is that we can modify the code to show which candidates won in each county. 
 
 
