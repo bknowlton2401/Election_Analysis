@@ -20,30 +20,19 @@ From there we also broke down the actual count of votes cast for each candidate 
     * The total votes were pulled from the csv file using the following code:
        Initialize a total vote counter.
         total_votes = 0
-       
-       
+        for row in reader:
+         total_votes = total_votes + 1
+         
+  * County Vote breakdown
+   * The counties were entered into a list (county_list = []) and the votes were entered into a dictionary (county_vote = {}). The code was writen such that if a new name or county was added, that item would be tracked.  
+   ![new_item](https://user-images.githubusercontent.com/96890065/158088074-c34b387d-d355-47f9-9953-50d4b70a779f.JPG)
+   
+  * Largest County Turnout
+    * This was determined using a f-count code. 
+       ![print_turnout](https://user-images.githubusercontent.com/96890065/158088421-45c6f68b-8344-49b4-91eb-855ff5894935.JPG)
+
 ## Election Audit Summary:
 
 This code can be used for furture elections, because we have written into the code, the ability to add and track new candidate names and county names:
-   # Get the candidate name from each row.
-        candidate_name = row[2]
-        # 3: Extract the county name from each row.
-        county_name = row[1]
-        # If the candidate does not match any existing candidate add it to
-        # the candidate list
-        if candidate_name not in candidate_options:
-            # Add the candidate name to the candidate list.
-            candidate_options.append(candidate_name)
-            # And begin tracking that candidate's voter count.
-            candidate_votes[candidate_name] = 0
-        # Add a vote to that candidate's count
-        candidate_votes[candidate_name] += 1
-        # 4a: Write an if statement that checks that the
-        # county does not match any existing county in the county list.
-        if county_name not in county_list:
-            # 4b: Add the existing county to the list of counties.
-            county_list.append(county_name)
-            # 4c: Begin tracking the county's vote count.
-            county_vote[county_name] = 0
-        # 5: Add a vote to that county's vote count.
-        county_vote[county_name] +=1
+
+
